@@ -11,7 +11,7 @@ app.use(express.json());
 const CONNECTIONSTRING = process.env.CONNECTION_STRING;
 const PORT_NUMBER = process.env.PORT_NUMBER;
 //app.use(errorHandler());
-app.get("/", (req, res) => res.send("Hello World!"));
+app.get("/", (req, res) => res.json("Hello World!"));
 app.listen(PORT_NUMBER, () =>
   console.log(`Example app listening on port ${PORT_NUMBER}!`)
 );
