@@ -23,7 +23,7 @@ const insertBook = async (req, res) => {
     const { title, author, genere, publicationDate } = req.body;
     const book = { title, author, genere, publicationDate };
     const result = await bookModel.create(book);
-    return res.status(200);
+    return res.status(200).send("Created Successfully");
   } catch (err) {
     return res.status(500);
   }
