@@ -4,7 +4,7 @@ require("dotenv").config();
 const DbConnection = require("./services/dbService.js");
 const { bookRouter } = require("./routes/bookRouter.js");
 const cors = require("cors");
-const errorHandler = require("./middlewares/errorHandler.js");
+//const errorHandler = require("./middlewares/errorHandler.js");
 
 app.use(cors());
 app.use(express.json());
